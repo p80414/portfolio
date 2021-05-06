@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array的用法</title>
+    <style>
+        /* div{
+            margin:0 auto;
+        } */
+        .tb1{
+            width: 1150px;
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        th{
+            border-right:3px solid black ;
+        }
+        td{
+            border-right:3px solid black ;
+            width: 350px;
+            padding-left: 10px;
+            text-align-last: left;
+            line-height: 25px;
+        }
+        thead{
+            background-color: tan;
+            text-transform: uppercase;
+        }
+        tbody{
+            background-color: rgb(201, 231, 139);
+        }
+         tbody td:nth-child(3){
+            background-color: rgb(214, 147, 214); 
+        }
+        tbody td:nth-child(2){
+            background-color: rgb(241, 243, 126);
+        }
+        /* tbody tr:hover{
+            background-color: turquoise;
+            color: brown;
+        } */
+        tbody td:hover{
+            background-color: crimson;
+            color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <H1 style="text-align: center;font-family: 標楷體; background-color: aqua; width: 500px; margin: auto; margin-bottom: 5px;">JavaScript的矩陣宣告</H1>
+        <script src="JS_ex6.js"></script>
+        <table class="tb1">
+            <thead>
+                <tr>
+                    <th>方法一</th>
+                    <th>方法二</th>
+                    <th>方法三</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>let myFriends = new Array();</td>
+                    <td>let myFriends = new Array("John", "Mary", "David");</td>
+                    <td>let myFriends = ["John", "Mary", "David"];</td>
+                </tr>
+                <tr>
+                    <td>myFriends[0]= "John";</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>myFriends[1]= "Mary";</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>myFriends[2]= "David";</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>myFriends[3]= 1;</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>myFriends[4]= true;</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr style="border-top: 2px dashed black;">
+                    <td style="font-weight: bold;">同個矩陣中可以宣告不同資料型別</td>
+                    <td style="font-weight: bold;">在new Array的同時宣告</td>
+                    <td style="font-weight: bold;">直接宣告變數，網頁會認定[ ]為陣列元素</td>
+                </tr>
+            </tbody>
+        </table>
+    </div >
+    <div>
+        <h2>延伸練習</h2>
+        <p style="font-weight: bold;">以下範例執行結果為何?</p>
+        <p>let myFriends = ["John", "Mary", "David"]</p>
+        <p>問題1. myFriends.join("");</p>
+        <p>問題2. myFriends.join(" and ");</p>
+        <input type="button" value="答案" onclick="test_Array()" style="width: 100px; background-color: tomato;">
+        <h3></h3>
+        <h4 style="font-size: larger;"></h4>
+    </div>
+</body>
+</html>
